@@ -1,30 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faStroopwafel} from '@fortawesome/free-solid-svg-icons';
+import './assets/css/main.css'
+import Header from './containers/Header';
+import Main from './styledComponents/Main';
+import Player from './containers/Player';
+import { Action, createStore } from 'redux';
+import {Provider} from 'react-redux';
+import IGlobalState, { initialState } from './state/globalState';
+import { HeaderActions, IFilterCollapseAction } from './actions/HeaderAction'
 
-library.add(faStroopwafel);
+//Redux
+const reducer = (state: IGlobalState = initialState, action: Action) => {
+  switch (action.type) {
+    case HeaderActions.HEADER_COLLAPSE:
+      const collapsedAction = action as IFilterCollapseAction;
+      return {...state, collapsed: collapsedAction.payload}
+  }
+  return state;
+}
+const store = createStore(reducer, initialState);
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload. <FontAwesomeIcon icon="stroopwafel" />
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Header />
+        <Main />
+        <Player />
+      </div>
+    </Provider>
   );
 }
 
