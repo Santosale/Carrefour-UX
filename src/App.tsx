@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faStroopwafel} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faStroopwafel);
 
 const App: React.FC = () => {
   return (
@@ -8,7 +13,7 @@ const App: React.FC = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/App.tsx</code> and save to reload. <FontAwesomeIcon icon="stroopwafel" />
         </p>
         <a
           className="App-link"
