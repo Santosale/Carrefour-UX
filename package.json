@@ -1,5 +1,5 @@
 {
-  "name": "helloworld",
+  "name": "game-ux",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,10 +14,12 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-jss": "^10.0.3",
     "react-redux": "^7.1.3",
     "react-scripts": "3.3.0",
+    "react-strike": "^1.0.5",
     "redux": "^4.0.5",
     "typescript": "^3.7.4"
   },
