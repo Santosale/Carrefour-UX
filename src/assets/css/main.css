@@ -7140,11 +7140,3 @@ a.text-dark:hover, a.text-dark:focus {
 
 .desktop-float {
   height: 420vh !important; }
-
-.player {
-  width: 100%;
-  background: #333;
-  color: #FFF;
-  position: absolute;
-  bottom: 0;
-  height: 3rem; }

@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/css/main.css';
-//import App from './App';
 import HeaderNav from './components/HeaderNav';
 import HeaderPostal from './components/HeaderPostal';
 import Crumbs from './components/Crumbs';
