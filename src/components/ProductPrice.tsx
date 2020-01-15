@@ -30,7 +30,7 @@ class ProductPrice extends React.Component<{}, {}> {
                                 data-datalayer='{"event":"ecommerce-add-to-cart","ecommerce":{"currencyCode":"EUR","add":{"products":[{"id":"[8435291300102]","category":"cat20001-la-despensa/cat20009-alimentacion/cat20066-aceites-y-vinagres","name":"aceite-de-oliva-virgen-extra-dcoop-1-l","brand":"dcoop","productDimensions":{"ecPageFacet":"nn","ecProductInternalId":"824301999","ecProductStock":"stock-z","ecSpecialCampaign":"nn","ecProductSMS":"958684","ecPageType":"nn"},"coupon":"nn","variant":"1-l","productMetrics":{"ecProductDiscount":"0.00"}}]}}}'
                                 data-special-campaign="promof1720008_3x2"
                                 data-product-discount="0,20">
-                                <button className="anadirBTN js-anadirBTN " data-texto="Añadir" >Añadir</button>
+                                <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                 <div className="num-item js-num-item hide">
                                     <span className="js-anadirBTN less-units">
                                         <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />

@@ -69,7 +69,7 @@ class ProductOfferAndPromotion extends React.Component<{}, {}> {
                                             data-dataLayer='{"event":"ecommerce-add-to-cart","ecommerce":{"currencyCode":"EUR","add":{"products":[{"id":"[8410010262343]","category":"cat20001-la-despensa/cat20009-alimentacion/cat20066-aceites-y-vinagres","name":"aceite-de-oliva-virgen-carbonell-1-l","brand":"carbonell","productDimensions":{"ecPageFacet":"nn","ecProductInternalId":"617301580","ecProductStock":"stock-z","ecSpecialCampaign":"nn","ecProductSMS":"659365","ecPageType":"nn"},"coupon":"nn","variant":"1-l","productMetrics":{"ecProductDiscount":"0.00"}}]}}}'
                                             data-special-campaign="promof1720008_3x2"
                                             data-product-discount="">
-                                            <button className="anadirBTN js-anadirBTN " data-texto="Añadir" >Añadir</button>
+                                            <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                             <div className="num-item js-num-item hide">
                                                 <span className="js-anadirBTN less-units">
                                                     <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
@@ -133,7 +133,7 @@ class ProductOfferAndPromotion extends React.Component<{}, {}> {
                                             data-dataLayer='{"event":"ecommerce-add-to-cart","ecommerce":{"currencyCode":"EUR","add":{"products":[{"id":"[8411190101392, 8411190148502]","category":"cat20001-la-despensa/cat20009-alimentacion/cat20066-aceites-y-vinagres","name":"aceite-de-oliva-virgen-extra-hojiblanca-coosur-1-l","brand":"coosur","productDimensions":{"ecPageFacet":"nn","ecProductInternalId":"520660329","ecProductStock":"stock-z","ecSpecialCampaign":"nn","ecProductSMS":"543824","ecPageType":"nn"},"coupon":"nn","variant":"1-l","productMetrics":{"ecProductDiscount":"0.00"}}]}}}'
                                             data-special-campaign="promof1720053_3x2"
                                             data-product-discount="">
-                                            <button className="anadirBTN js-anadirBTN " data-texto="Añadir" >Añadir</button>
+                                            <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                             <div className="num-item js-num-item hide">
                                                 <span className="js-anadirBTN less-units">
                                                     <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
@@ -208,7 +208,7 @@ class ProductOfferAndPromotion extends React.Component<{}, {}> {
                                             data-dataLayer='{"event":"ecommerce-add-to-cart","ecommerce":{"currencyCode":"EUR","add":{"products":[{"id":"[8410010265023]","category":"cat20001-la-despensa/cat20009-alimentacion/cat20066-aceites-y-vinagres","name":"aceite-de-oliva-virgen-extra-ecologico-carbonell-botella-vidrio-750-ml","brand":"carbonell","productDimensions":{"ecPageFacet":"nn","ecProductInternalId":"prod1000027","ecProductStock":"stock-z","ecSpecialCampaign":"nn","ecProductSMS":"071945","ecPageType":"nn"},"coupon":"nn","variant":"750-ml","productMetrics":{"ecProductDiscount":"0.00"}}]}}}'
                                             data-special-campaign="promof1720008_3x2"
                                             data-product-discount="0,60">
-                                            <button className="anadirBTN js-anadirBTN " data-texto="Añadir" >Añadir</button>
+                                            <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                             <div className="num-item js-num-item hide">
                                                 <span className="js-anadirBTN less-units">
                                                     <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
@@ -270,7 +270,7 @@ class ProductOfferAndPromotion extends React.Component<{}, {}> {
                                             data-dataLayer='{"event":"ecommerce-add-to-cart","ecommerce":{"currencyCode":"EUR","add":{"products":[{"id":"[8410158431878]","category":"cat20001-la-despensa/cat20009-alimentacion/cat20066-aceites-y-vinagres","name":"aceite-de-orujo-suave-capicua-1-l","brand":"capicua","productDimensions":{"ecPageFacet":"nn","ecProductInternalId":"520660358","ecProductStock":"stock-z","ecSpecialCampaign":"nn","ecProductSMS":"029195","ecPageType":"nn"},"coupon":"nn","variant":"1-l","productMetrics":{"ecProductDiscount":"0.00"}}]}}}'
                                             data-special-campaign=""
                                             data-product-discount="0,09">
-                                            <button className="anadirBTN js-anadirBTN " data-texto="Añadir" >Añadir</button>
+                                            <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                             <div className="num-item js-num-item hide">
                                                 <span className="js-anadirBTN less-units">
                                                     <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
