@@ -14,17 +14,17 @@ interface IHeaderState {
 }
 
 class Player extends React.Component<IPlayerProps, IHeaderState> {
-    constructor (props: IPlayerProps) {
-        super (props);
-        this.state = {playing: false}
+    constructor(props: IPlayerProps) {
+        super(props);
+        this.state = { playing: false }
     }
 
     public togglePlay = () => {
-        this.setState( {playing: !!!this.state.playing});
+        this.setState({ playing: !!!this.state.playing });
     }
 
-    public render () {
-        return(
+    public render() {
+        return (
             <div className="player">
                 <p>
                     <span className="player-title">{this.props.title}</span>
@@ -36,7 +36,7 @@ class Player extends React.Component<IPlayerProps, IHeaderState> {
                     </a>
                 </p>
             </div>
-        
+
         );
     }
 }

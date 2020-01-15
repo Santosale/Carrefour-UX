@@ -6,7 +6,7 @@ interface ISearchTextProps {
 
 
 class searchText extends React.Component<ISearchTextProps, {}> {
-    public constructor (props: ISearchTextProps) {
+    public constructor(props: ISearchTextProps) {
         super(props);
     }
 
@@ -15,9 +15,9 @@ class searchText extends React.Component<ISearchTextProps, {}> {
     }
 
     public render() {
-        return(
+        return (
             <input type="text" name="searchText" placeholder="Buscar..."
-                        onChange={this.onSearchTextChangeInternal} />
+                onChange={this.onSearchTextChangeInternal} />
         )
     }
 

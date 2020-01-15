@@ -9,7 +9,7 @@ export interface IMainProps {
 }
 
 class Main extends React.Component<IMainProps, {}> {
-    public render () {
+    public render() {
         return (
             <div className={this.props.classes.main}>
                 <p className="text-centered">Main content here</p>
