@@ -1,10 +1,13 @@
 import React from 'react';
 
 interface IProductPriceProps {
-    price: string;
+    old_price: string;
+    new_price: string;
+    description_offert: string;
 }
 
 class ProductPrice extends React.Component<IProductPriceProps, {}> {
+    // eslint-disable-next-line
     constructor(props: IProductPriceProps) {
         super(props);
         // change state
@@ -17,11 +20,11 @@ class ProductPrice extends React.Component<IProductPriceProps, {}> {
                     <div className="col-add">
                         <div className="save-and-price">
                             <div className="prices">
-                                <del className="price-kg-old">{this.props.price}</del>
-                                <del className="price-old js-price-before-first">{this.props.price}</del>
+                                <del className="price-kg-old">{this.props.old_price}/l</del>
+                                <del className="price-old js-price-before-first">{this.props.old_price}</del>
                                 <br />
-                                <p className="price-kg">4,29&nbsp;&euro;/l</p>
-                                <p className="price js-price">4,29€</p>
+                                <p className="price-kg">{this.props.new_price}/l</p>
+                                <p className="price js-price">{this.props.new_price}</p>
                             </div>
                         </div>
                         <div className="form producto-seleccionar-unidades">
@@ -52,7 +55,7 @@ class ProductPrice extends React.Component<IProductPriceProps, {}> {
                         <div className="promobox">
                             <p className="text-promo">
                                 <span className="tag-promo">3x2</span>
-                                Comprando 3 unidades, te regalamos la unidad de menor importe. Válido de 01/01/2020 a 16/01/2020.</p>
+                                {this.props.description_offert}</p>
                         </div>
                     </div>
                 </div>

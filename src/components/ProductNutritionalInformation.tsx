@@ -1,13 +1,24 @@
 import React from 'react';
 
-class ProductNutritionalInformation extends React.Component<{}, {}> {
-    
+interface IProductPriceProps {
+    value_kj: string;
+    value_kcal: string;
+    measure_map: string[];
+}
+
+class ProductNutritionalInformation extends React.Component<IProductPriceProps, {}> {
+    // eslint-disable-next-line
+    constructor(props: IProductPriceProps) {
+        super(props);
+        // change state
+    }
+
     public render() {
         return (
             <div className="nutrition" id="nutrition">
                 <h3>Información nutricional</h3>
                 <p className="nutrition-txt">Valores medios por  100 gr</p>
-                <div id="grafico" data-kj="3768.12" data-cal="900" data-g="100" data-h="0" data-p="0" data-s="0" data-f="" className="svggraph">
+                <div id="grafico" data-kj={this.props.value_kj} data-cal={this.props.value_kcal} data-g="100" data-h="0" data-p="0" data-s="0" data-f="" className="svggraph">
                     <p>
                         Valor energético
                     <br />
@@ -27,11 +38,11 @@ class ProductNutritionalInformation extends React.Component<{}, {}> {
                         <animate xlinkHref="#arc6" attributeName="stroke-width" from="0" to="45" dur="1s" begin="0s" fill="freeze" />
                     </svg>
                 </div>
-                <div className="nutrition-box"><p className="valor"><span className="leyend c1"></span>Grasas<span className="fright">100 g</span></p>
-                    <p className="subvalor">de las cuales  Saturadas<span className="fright">13 g</span></p>
-                    <p className="valor"><span className="leyend c2"></span>Hidratos de carbono<span className="fright">0 g</span></p>
-                    <p className="subvalor">de los cuales  Azúcares<span className="fright">0 g</span></p>
-                    <p className="valor"><span className="leyend c4"></span>Proteínas<span className="fright">0 g</span></p> <p className="valor"><span className="leyend c5"></span>Sal<span className="fright">0 g</span></p>
+                <div className="nutrition-box"><p className="valor"><span className="leyend c1"></span>Grasas<span className="fright">{this.props.measure_map[0]}</span></p>
+                    <p className="subvalor">de las cuales  Saturadas<span className="fright">{this.props.measure_map[1]}</span></p>
+                    <p className="valor"><span className="leyend c2"></span>Hidratos de carbono<span className="fright">{this.props.measure_map[2]}</span></p>
+                    <p className="subvalor">de los cuales  Azúcares<span className="fright">{this.props.measure_map[3]}</span></p>
+                    <p className="valor"><span className="leyend c4"></span>Proteínas<span className="fright">{this.props.measure_map[4]}</span></p> <p className="valor"><span className="leyend c5"></span>Sal<span className="fright">{this.props.measure_map[5]}</span></p>
                 </div>
             </div>
 

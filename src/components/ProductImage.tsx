@@ -1,13 +1,24 @@
 import React from 'react';
 
-class ProductImage extends React.Component<{}, {}> {
-    
+interface IProductImageProps {
+    url_image_small: string;
+    url_image_big: string;
+    name_product: string
+}
+
+class ProductImage extends React.Component<IProductImageProps, {}> {
+    // eslint-disable-next-line
+    constructor(props: IProductImageProps) {
+        super(props);
+        // change state
+    }
+
     public render() {
         return (
             <>
                 <header className="title-inner title-product">
                     <h1 id="product-01" className="title-03">
-                        Aceite de oliva virgen extra Dcoop 1 l.</h1>
+                    {this.props.name_product}</h1>
                     <div className="promotions">
                         <p className="promo-tag"> 3x2</p>
                         <a id="verPromo" href="/supermercado" className="promo-link">Ver promoción</a>
@@ -18,8 +29,8 @@ class ProductImage extends React.Component<{}, {}> {
                         <div className="gallery">
                             <div className="images">
                                 <div id="carr1" className="owl-carousel owl-theme" >
-                                    <a href="/supermercado" data-standard="https://static.carrefour.es/hd_280x_/img_pim_food/958684_00_1.jpg" data-srcset="https://static.carrefour.es/hd_560x_/img_pim_food/958684_00_1.jpg 2x">
-                                        <img alt="Aceite de oliva virgen extra Dcoop 1 l." src="https://static.carrefour.es/hd_560x_/img_pim_food/958684_00_1.jpg" srcSet="https://static.carrefour.es/hd_280x_/img_pim_food/958684_00_1.jpg 660w, https://static.carrefour.es/hd_560x_/img_pim_food/958684_00_1.jpg" />
+                                    <a href="/supermercado" data-standard={this.props.url_image_small} data-srcset={this.props.url_image_big + "2x"}>
+                                        <img alt={this.props.name_product} src={this.props.url_image_big} srcSet={this.props.url_image_small + " 660w, " + this.props.url_image_big} />
                                     </a>
                                 </div>
                             </div>

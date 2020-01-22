@@ -1,26 +1,36 @@
 import React from 'react';
-import ProductImage from './components/ProductImage';
-import ProductPrice from './components/ProductPrice';
-import ProductNutritionalInformation from './components/ProductNutritionalInformation';
-import ProductIngredients from './components/ProductIngredients';
-import ProductMoreInformation from './components/ProductMoreInformation';
+import ProductImage from './containers/ProductImage';
+import ProductPrice from './containers/ProductPrice';
+import ProductNutritionalInformation from './containers/ProductNutritionalInformation';
+import ProductIngredients from './containers/ProductIngredients';
+import ProductMoreInformation from './containers/ProductMoreInformation';
 import ProductOfferAndPromotion from './components/ProductOfferAndPromotion';
-import ProductFoodInformation from './components/ProductFoodInformation';
+import ProductFoodInformation from './containers/ProductFoodInformation';
 import ProductIngredientInformation from './components/ProductIngredientInformation';
+import IGlobalState, { initialState } from './state/globalState';
+import { Action, createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const reducer = (state: IGlobalState = initialState, action: Action) => {
+        return state;
+  }
+const store = createStore(reducer, initialState);
 
 class App extends React.Component<{}, {}> {
     
     public render() {
         return(
         <section className="content-inner">
+            <Provider store={store}>
             <ProductImage />
-            <ProductPrice price="4,49€"/>
+            <ProductPrice/>
             <ProductNutritionalInformation />
             <ProductIngredients />
             <ProductMoreInformation />
             <ProductOfferAndPromotion />
             <ProductFoodInformation />
             <ProductIngredientInformation />
+            </Provider>
             <div className="clear">&nbsp;</div>
         </section>
         );

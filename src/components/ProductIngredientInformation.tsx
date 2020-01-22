@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductIngredients from './ProductIngredients'
+import ProductIngredients from '../containers/ProductIngredients';
 
 class ProductIngredientsInformation extends React.Component<{}, {}> {
     
