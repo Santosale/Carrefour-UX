@@ -1,11 +1,7 @@
 import React from 'react';
 
 class ProductOfferAndPromotion extends React.Component<{}, {}> {
-    constructor(props: {}) {
-        super(props);
-        // change state
-    }
-
+    
     public render() {
         return (
             <div className="richRelevanceData">
@@ -72,11 +68,11 @@ class ProductOfferAndPromotion extends React.Component<{}, {}> {
                                             <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                             <div className="num-item js-num-item hide">
                                                 <span className="js-anadirBTN less-units">
-                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
+                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" alt="imagen" className="js-ico-menos" />
                                                 </span>
                                                 <input type="num" value="0" min="1" maxLength={2} data-text-required="Este campo es obligatorio." data-text-number="Por favor, escribe un número válido." className="sel-units js-sel-units" />
                                                 <span className="js-anadirBTN more-units">
-                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" />
+                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" alt="imagen"/>
                                                 </span>
                                             </div>
                                         </div>
@@ -136,11 +132,11 @@ class ProductOfferAndPromotion extends React.Component<{}, {}> {
                                             <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                             <div className="num-item js-num-item hide">
                                                 <span className="js-anadirBTN less-units">
-                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
+                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" alt="imagen" className="js-ico-menos" />
                                                 </span>
                                                 <input type="num" value="0" min="1" maxLength={2} data-text-required="Este campo es obligatorio." data-text-number="Por favor, escribe un número válido." className="sel-units js-sel-units" />
                                                 <span className="js-anadirBTN more-units">
-                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" />
+                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" alt="imagen" />
                                                 </span>
                                             </div>
                                         </div>
@@ -211,11 +207,11 @@ class ProductOfferAndPromotion extends React.Component<{}, {}> {
                                             <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                             <div className="num-item js-num-item hide">
                                                 <span className="js-anadirBTN less-units">
-                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
+                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" alt="imagen" className="js-ico-menos" />
                                                 </span>
                                                 <input type="num" value="0" min="1" maxLength={2} data-text-required="Este campo es obligatorio." data-text-number="Por favor, escribe un número válido." className="sel-units js-sel-units" />
                                                 <span className="js-anadirBTN more-units">
-                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" />
+                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" alt="imagen" />
                                                 </span>
                                             </div>
                                         </div>
@@ -273,11 +269,11 @@ class ProductOfferAndPromotion extends React.Component<{}, {}> {
                                             <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                             <div className="num-item js-num-item hide">
                                                 <span className="js-anadirBTN less-units">
-                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
+                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" alt="imagen" className="js-ico-menos" />
                                                 </span>
                                                 <input type="num" value="0" min="1" maxLength={2} data-text-required="Este campo es obligatorio." data-text-number="Por favor, escribe un número válido." className="sel-units js-sel-units" />
                                                 <span className="js-anadirBTN more-units">
-                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" />
+                                                    <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" alt="imagen" />
                                                 </span>
                                             </div>
                                         </div>

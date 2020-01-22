@@ -1,11 +1,7 @@
 import React from 'react';
 
 class ProductNutritionalInformation extends React.Component<{}, {}> {
-    constructor(props: {}) {
-        super(props);
-        // change state
-    }
-
+    
     public render() {
         return (
             <div className="nutrition" id="nutrition">

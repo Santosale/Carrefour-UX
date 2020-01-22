@@ -1,7 +1,11 @@
 import React from 'react';
 
-class ProductPrice extends React.Component<{}, {}> {
-    constructor(props: {}) {
+interface IProductPriceProps {
+    price: string;
+}
+
+class ProductPrice extends React.Component<IProductPriceProps, {}> {
+    constructor(props: IProductPriceProps) {
         super(props);
         // change state
     }
@@ -13,8 +17,8 @@ class ProductPrice extends React.Component<{}, {}> {
                     <div className="col-add">
                         <div className="save-and-price">
                             <div className="prices">
-                                <del className="price-kg-old">4,49&nbsp;&euro;/l</del>
-                                <del className="price-old js-price-before-first">4,49€</del>
+                                <del className="price-kg-old">{this.props.price}</del>
+                                <del className="price-old js-price-before-first">{this.props.price}</del>
                                 <br />
                                 <p className="price-kg">4,29&nbsp;&euro;/l</p>
                                 <p className="price js-price">4,29€</p>
@@ -33,11 +37,11 @@ class ProductPrice extends React.Component<{}, {}> {
                                 <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
                                 <div className="num-item js-num-item hide">
                                     <span className="js-anadirBTN less-units">
-                                        <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" className="js-ico-menos" />
+                                        <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" alt="imagen" className="js-ico-menos" />
                                     </span>
                                     <input type="num" defaultValue="0" min="1" maxLength={2} data-text-required="Este campo es obligatorio." data-text-number="Por favor, escribe un número válido." className="sel-units js-sel-units" />
                                     <span className="js-anadirBTN more-units">
-                                        <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" />
+                                        <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/mas.png" alt="imagen" />
                                     </span>
                                 </div>
                             </div>

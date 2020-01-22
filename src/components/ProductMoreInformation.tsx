@@ -1,11 +1,7 @@
 import React from 'react';
 
 class ProductMoreInformation extends React.Component<{}, {}> {
-    constructor(props: {}) {
-        super(props);
-        // change state
-    }
-
+    
     public render() {
         return (<div className="more-info">
             <p className="title-07">Más información</p>

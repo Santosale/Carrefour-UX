@@ -9,16 +9,12 @@ import ProductFoodInformation from './components/ProductFoodInformation';
 import ProductIngredientInformation from './components/ProductIngredientInformation';
 
 class App extends React.Component<{}, {}> {
-    constructor(props: {}) {
-        super(props);
-        // change state
-    }
-
+    
     public render() {
         return(
         <section className="content-inner">
             <ProductImage />
-            <ProductPrice />
+            <ProductPrice price="4,49€"/>
             <ProductNutritionalInformation />
             <ProductIngredients />
             <ProductMoreInformation />

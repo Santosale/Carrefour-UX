@@ -1,11 +1,7 @@
 import React from 'react';
 
 class ProductIngredients extends React.Component<{}, {}> {
-    constructor(props: {}) {
-        super(props);
-        // change state
-    }
-
+    
     public render() {
         return (<div className="box-ingredientes">
             <div id="ingredientes" className="ingredientes">

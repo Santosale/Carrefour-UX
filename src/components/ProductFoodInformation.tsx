@@ -1,11 +1,7 @@
 import React from 'react';
 
 class ProductFoodInformation extends React.Component<{}, {}> {
-    constructor(props: {}) {
-        super(props);
-        // change state
-    }
-
+    
     public render() {
         return (<div className="open-html-content">
             <h3>Información Alimentaria</h3>
