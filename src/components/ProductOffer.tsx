@@ -81,7 +81,7 @@ class ProductOffer extends React.Component<IProductOffer, {}> {
                 data-dataLayer='{"event":"ecommerce-add-to-cart","ecommerce":{"currencyCode":"EUR","add":{"products":[{"id":"[8410010262343]","category":"cat20001-la-despensa/cat20009-alimentacion/cat20066-aceites-y-vinagres","name":"aceite-de-oliva-virgen-carbonell-1-l","brand":"carbonell","productDimensions":{"ecPageFacet":"nn","ecProductInternalId":"617301580","ecProductStock":"stock-z","ecSpecialCampaign":"nn","ecProductSMS":"659365","ecPageType":"nn"},"coupon":"nn","variant":"1-l","productMetrics":{"ecProductDiscount":"0.00"}}]}}}'
                 data-special-campaign="promof1720008_3x2"
                 data-product-discount="">
-                <button className="anadirBTN" data-texto="Añadir" >Añadir</button>
+                <button className="anadirBTN button-promotion" data-texto="Añadir" >Añadir</button>
                 <div className="num-item js-num-item hide">
                     <span className="js-anadirBTN less-units">
                         <img src="https://static.carrefour.es/supermercado/static/style/css/css-files/gfx/papelera.png" alt="imagen" className="js-ico-menos" />
